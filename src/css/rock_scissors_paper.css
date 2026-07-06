@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+.game h2 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.game-content {
+     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    gap: 40px;
+}
+
+.choice-btn {
+    width: 90px;
+    height: 90px;
+    border: none;
+    border-radius: 25px;
+    background: #000;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 0.3s;
+}
+
+.choice-btn:hover {
+    transform: scale(1.05);
+}
+
+.choice-btn img {
+    width: 45px;
+    height: 45px;
+}
+
+.score {
+    position: absolute;
+    right: 0;
+    text-align: left;
+}
+
+.score h3 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.score p {
+    font-size: 24px;
+}
+
+#result {
+    text-align: center;
+    margin: 60px 0;
+    font-size: 30px;
+    color: #22b322;
+    font-weight: 500;
+}
+
+#computer-choice {
+    display: block;
+    margin: 0 auto;
+
+    width: 340px;
+    height: 70px;
+
+    border: none;
+    border-radius: 35px;
+
+    background: #000;
+    color: #fff;
+
+    font-size: 26px;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+#computer-choice:hover {
+    background: #222;
+}
