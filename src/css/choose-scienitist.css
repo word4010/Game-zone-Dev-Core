@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.choose-scientiist{
+    padding-top: 36px;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+}
+
+.div-h1{
+padding-bottom:36px ;
+text-align: center;
+font-size: 16px;
+}
+.ul-li-card{
+    width: 100px;
+    height: 100px;
+    background-color: rgba(217, 217, 217, 1);
+border-radius: 20px;
+}
+.div{
+    display: flex;
+    justify-content: center;
+}
+.div-ul{
+    padding-right: 59px;
+}
+.div-ul-1{
+    padding-right: 59px;
+}
+
+.div-ul-2{
+    padding-right: 59px;
+}
+.ul-li{
+    padding-bottom: 36px;
+}
+.ul-second{
+    columns:2 ;
+    column-gap: 36px;
+    
+}
+.div-second{
+    display: flex;
+    justify-content: center;
+}
+.li-p{
+    text-align: right
+    ;
+ 
+
+
+font-family: 'Montserrat Alternates';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+color: #FFFFFF;
+
+}
+.li-p1{
+    text-align: left;
+  
+
+font-family: 'Montserrat Alternates';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+color: #FFFFFF;
+
+
+}
+.ul-li-1{
+background-color: black;
+
+}
+.ul-li-2{
+    background-color: black;
+}
+.ul-li-3{
+    background-color: black;
+}
+.ul-li-4{
+    background-color: black;
+
+}
+.ul-li-5{
+    background-color: black;
+}
+.ul-li-6{
+    background-color: black;
+}
+.ul-li-7{
+   background-color: black; 
+}
+.ul-li-8{
+    background-color: black;
+}
+.divv{
+    
+    padding-top: 20px;
+    padding-bottom: 36px;
+    width: 489px;
+    height: 35px;
+}
+.divv-p{
+    background-color: black;
+width: 449px;
+height: 15px;
+font-family: 'Montserrat Alternates';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+
+text-align: center;
+color: #FFFFFF;
+
+}
