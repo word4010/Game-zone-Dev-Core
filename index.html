@@ -3,30 +3,52 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/Game-zone-Dev-Core/favicon.svg" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vanilla App Template</title>
-  
-  <script type="module" crossorigin src="/Game-zone-Dev-Core/assets/index-1bfbc598.js"></script>
-  <link rel="stylesheet" href="/Game-zone-Dev-Core/assets/index-27e80058.css">
+  <title>Game Zone</title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/Game-zone-Dev-Core/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/Game-zone-Dev-Core/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/Game-zone-Dev-Core/favicon-16x16.png">
+    <link rel="manifest" href="/Game-zone-Dev-Core/site.webmanifest">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&family=Montserrat+Alternates&family=Sacramento&display=swap" rel="stylesheet">
+    
+    <!-- Normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+    integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Main Stylesheet -->
+    
+
+  <script type="module" crossorigin src="/Game-zone-Dev-Core/assets/index-64a93dcd.js"></script>
+  <link rel="stylesheet" href="/Game-zone-Dev-Core/assets/index-68fc6fc8.css">
 </head>
 
 <body>
   <!-- Loads the specified .html file -->
   <header class="header">
-    <div class="container">
-
+    <div class="container header__container">
         <div class="header__logo logo">
-            <i class="logo__icon ph ph-code"></i>
+            <img src="/Game-zone-Dev-Core/assets/logo-header-bc658c5e.svg" alt="Coding Magic Logo" class="logo__icon">
             <div class="logo__text">
-                <span class="logo__title">Coding</span>
-                <span class="logo__subtitle">Magic</span>
+                <span class="logo__title">Coding</span> <span class="logo__subtitle">Magic</span>
             </div>
         </div>
 
         <nav class="header__nav nav">
-            <div class="nav__item nav__item--dropdown">
-                Інтерактив <i class="nav__icon ph ph-caret-down"></i>
+            <div class="nav__item nav__item--dropdown" tabindex="0">
+                Інтерактив <span class="nav__arrow"></span>
+                <ul class="nav__dropdown">
+                    <li class="nav__dropdown-item"><a href="" class="nav__dropdown-link">Числовий</a></li>
+                    <li class="nav__dropdown-item"><a href="" class="nav__dropdown-link">Ігровий</a></li>
+                    <li class="nav__dropdown-item"><a href="" class="nav__dropdown-link">Ознайомчий</a></li>
+                </ul>
             </div>
             <a href="#" class="nav__link">Наша команда</a>
             <a href="#" class="nav__link">Контакти</a>
@@ -35,36 +57,35 @@
         <div class="header__controls controls">
             <div class="controls__theme-toggle theme-toggle">
                 <div class="theme-toggle__button">
-                    <i class="theme-toggle__icon ph-fill ph-sun"></i>
+                    <img src="/Game-zone-Dev-Core/assets/sun-switch-c444cf4e.svg" alt="Light theme" class="theme-toggle__icon">
                 </div>
             </div>
-            <div class="controls__greeting user-greeting">
+            <p class="controls__greeting user-greeting">
                 Вітаємо, User!
-            </div>
+            </p>
         </div>
     </div>
 </header>   
   <main>
-    <h1>Популярні інтерактивні ігри</h1>
+    <h1 >Популярні інтерактивні ігри</h1>
     <div class="section-block section-block--leap-year">
-    <div class="container">
+    <div class="container section-block__container">
+        <hr class="section-block__line">
         <h2 class="section-block__title">Перевір в який рік ти народився</h2>
-
         <div class="section-block__content">
-            <div class="section-block__input-wrapper input-group">
-                <input type="text" placeholder="Введіть рік народження" class="input-group__field">
+            <div class="section-block__input-wrapper input-group"> <input type="text"
+                    placeholder="Введіть рік народження" class="input-group__field">
                 <button class="input-group__button">
-                    <i class="input-group__icon ph ph-magnifying-glass"></i>
+                    <img src="/Game-zone-Dev-Core/assets/search-3f174def.svg" alt="Search" class="input-group__icon">
                 </button>
             </div>
 
-            <div class="section-block__result section-block__result--success section-block__result--hidden">
-            Ви народилися у високосний рік!
-            </div>
-            <div class="section-block__result section-block__result--error">
-            Ви народилися не у високосний рік!
-            </div>
+            <p class="section-block__result section-block__result--success">
+                Ви народилися у високосний рік!
+            </p>
+
         </div>
+        <hr class="section-block__line">
     </div>
 </div>
     <div class="guess-section">
@@ -80,7 +101,7 @@
                 <input type="number" id="guessNumber" placeholder="Введіть число">
 
                 <button id="guessBtn">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAAAMRJREFUeAG1UgENwkAMLCiYhJeAhJeAg00CDngHwwE4mIQhAQeTMByUdvST8un6C8kuabJ9r3ffbwEUEDFSDBQzfjHL/xlqIFKPPvotxeyYKIKcB4qLutHdKo6q+LRiEJRILJODJBL4LSbhjWUiK4eKQJNvWiYWwAZY3CPFW5KhUtxY5yzwku8OfORdeJbKegoBbHeewiS81iI8lEir9oAf7oq/m2maMPmGPrLI5Il0POfCcZQ2dRvrIh52ETnAHxDnZaU/fUiF4X5WpZcAAAAASUVORK5CYII=" alt="Пошук">
+                    <img src="./img/search.png" alt="Пошук">
                 </button>
             </div>
 
@@ -174,34 +195,45 @@
         </div>
 
     <div class="section-block section-block--time-calculator">
-    <div class="container">
+    <div class="container section-block__container">
+        <hr class="section-block__line">
         <h2 class="section-block__title">Калькулятор часу</h2>
 
-        <div class="section-block__content">
+        <div class="section-block__content time-calculator__content">
+
             <div class="section-block__input-wrapper input-group">
                 <input type="text" placeholder="Введіть число" class="input-group__field">
                 <button class="input-group__button">
-                <i class="input-group__icon ph ph-magnifying-glass"></i>
+                    <img src="/Game-zone-Dev-Core/assets/search-3f174def.svg" alt="Search" class="input-group__icon">
                 </button>
             </div>
-            <div class="section-block__divider"></div>
-            <div class="section-block__result section-block__result--time"></div>
+
+            <div class="section-block__divider-dots"></div>
+            <p class="section-block__result section-block__result--time">
+                3 дн. 15:45:01
+            </p>
+
         </div>
+        <hr class="section-block__line">
     </div>
 </div>
-    <div class="section-block section-block--three-numbers">
-    <div class="container">
+    <div class="section-block section-block--max-number">
+    <div class="container section-block__container">
         <h2 class="section-block__title">Введіть 3 числа</h2>
 
-        <div class="section-block__content">
-            <div class="section-block__inputs-row">
-                <input type="text" placeholder="Введіть число" class="section-block__input-field">
-                <input type="text" placeholder="Введіть число" class="section-block__input-field">
-                <input type="text" placeholder="Введіть число" class="section-block__input-field">
+        <div class="section-block__content max-number__content">
+            <div class="max-number__inputs">
+                <input type="text" placeholder="Введіть число" class="max-number__input">
+                <input type="text" placeholder="Введіть число" class="max-number__input">
+                <input type="text" placeholder="Введіть число" class="max-number__input">
             </div>
-            <div class="section-block__result section-block__result--max-number"></div>
+
+            <p class="section-block__result">
+                Найбільше число, яке ви ввели - (число)
+            </p>
         </div>
 
+        <hr class="section-block__line">
     </div>
 </div>
     
@@ -218,7 +250,7 @@
     <div class="container">
 
         <a href="./index.html" class="footer-logo">
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF8AAAAnCAYAAABpPZRZAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAABIhJREFUeAHtms1R3DAUx/9DcmXGqSDmyCmbCuLcuGEqWKcCSAU4FUAqWKWChQpYKgBOzHCBVMDSABs/9DR+Fv6QbS1Ldv2beWNZ33pPfpJlf4BfLjL5m8kDBt6cBNoAAyuClH9Ukx5lMsKAN0IWghR7SoG7u7vJ7e1tJOLJMFci70bzEX6IMznk8CyTX5niR4vFIoFeA4JMJhQPNswAsAU/kEJ3MjnI5DqT4Pn5OeK0GcsO3lbxIfw8YSciTP0P4AlfyieoU/vQPv16a2uLwvPd3d1Zdk0zeYR2O4fwOIASqP77TI6hFXfB4a7EIjyHx777dDs0UJr1Pyni6ekp2t7ePoeefaSMT9CGIaEBzOGfY27nq1V/XJK3rg8hyrfLaUX+urqMsZYx3hdSaKUaKLzY29sbc+P3VvoyCLmdOqgvF0LsxX/MdUw5PbbqlGEFvau7EvWNrf6Y+CkLTY4ES4Z84wL5ljLB8vf/MZrXFIXiNjiEVl6A3HjSrZyiXvlTcR9Y5aclbVF6YiLa+HzTQRe+QT+218g7Sux3rM+FwCH9C4oGesjkhvuRQCtLuocU9fwWYSp3yXWZsdltyfzOyqcZTFa7csgbcv6ZFX/AnTNcsfh64ZpBK7eKKuOYRdTXQhpY17K0F1yUb16OqOAfx/zEmRU/R3FWXSL3wT4M8MD1l+1sIpEeinhq3zyl1N/YKjdGN+Zcp+12CvU17XZsxR+hGTOAm4Z8CV/H3MZ35G6qKz+gH3Wqj4z7yP2hvsygd2ITK41cwQNLzOnUjx3040D0hZjjtTeoZMQdpIVTwR1X92RQ3MYj/LmgEFqRCcrXlYjTgoqyiejLyCoHEW+XL4uTKBTXvVK6Kn7EZZp2HWWd8m2AVZNAewoaTwhtuMZJ2VXxpsEFuu3pFdbTABOWFA2Leh/FE1Mu2xWF9TOAE30VD+TnN31Q2DAD+FB8xOVddkRNKGyIAXwonjhC8UihLwobYADaGtIgp+gHuZtH+MWsIb7rbUPVIhnDAwr9Z1jAdZzBH/KJbLt19YnCa70k8NgnhX4GiLh819dxG1+u0Acpii9qFFbwfESu0N0A5gg5RH/ek+IJheK4UvjZVJQ21MUA9ObW9CHDhVUpPkD+JmpziPwcitLHyH8WcKm31Vqq0M4AIeefoB+rUjy1myI/75ELKd2HyGd6KuLb1N8KBXcDJJy38cCohlW6mrpZnIo8IfI1TZYJ+d4YLbDuY5EvheMuScHNACZf7blFDav28WlFfILcDdHMN9+jTZoJm78xRqI+uo9QfGpO+BrD8bcWhWYDkK/veqTwHhZX6oNUrJm5IyuP3FpSniO+HkMbI+Vyqbg3YSpvvhWTOLtohWoDdD1CNmXfy64mhFaSWVzLnuKgpEyE/LPpSNzT9YKvNNONcdOa+itRKH/TNEcKEdpj3qwV1o8QxT/dSnH9aSpB/l1S8g0tP48JzrlsivWDJuU1loyPI+R1I0K+ba2lz7+aEbTvOseAJILjrO+rfGKGAYnZmDQaoI/yzRqwdN/2n0G/qXzGoJeBgQr+AWdsWwwUQp4FAAAAAElFTkSuQmCC" alt="Coding Magic">
+            <img src="./img/site-logo.png" alt="Coding Magic">
         </a>
 
         <ul class="footer-contacts">
