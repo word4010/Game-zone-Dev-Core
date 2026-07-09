@@ -108,3 +108,6 @@ border-radius: 20px;
 .div-second-scientist > div:nth-child(even) {
     justify-self: start;
 }
+.scientist-div-7{
+height: 35px;
+}
