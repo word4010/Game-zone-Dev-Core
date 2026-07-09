@@ -4,15 +4,18 @@
     box-sizing: border-box;
 }
 .choose-scientiist{
-    padding-top: 36px;
+   
     font-family: Arial, sans-serif;
     background-color: #fff;
 }
 
 .div-h1{
+    
+    font-weight: 400;
 padding-bottom:36px ;
 text-align: center;
 font-size: 16px;
+font-family: var(--font-family);
 }
 .ul-li-card{
     width: 100px;
@@ -37,86 +40,71 @@ border-radius: 20px;
 .ul-li{
     padding-bottom: 36px;
 }
-.ul-second{
+.div-second-scientist-ul{
     columns:2 ;
     column-gap: 36px;
     
 }
-.div-second{
-    display: flex;
-    justify-content: center;
-}
-.li-p{
-    text-align: right
-    ;
- 
+.div-second-scientist{
 
+      display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 36px;
+}
 
-font-family: 'Montserrat Alternates';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 15px;
-color: #FFFFFF;
-
-}
-.li-p1{
-    text-align: left;
-  
-
-font-family: 'Montserrat Alternates';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 15px;
-color: #FFFFFF;
-
-
-}
-.ul-li-1{
-background-color: black;
-
-}
-.ul-li-2{
-    background-color: black;
-}
-.ul-li-3{
-    background-color: black;
-}
-.ul-li-4{
-    background-color: black;
-
-}
-.ul-li-5{
-    background-color: black;
-}
-.ul-li-6{
-    background-color: black;
-}
-.ul-li-7{
-   background-color: black; 
-}
-.ul-li-8{
-    background-color: black;
-}
 .divv{
-    
-    padding-top: 20px;
-    padding-bottom: 36px;
-    width: 489px;
-    height: 35px;
+    display: flex;
+justify-content: center;
+}
+.scientist-li-p{
+    text-align: right;
 }
 .divv-p{
+    font-weight: 400;
+    color: #fff;
     background-color: black;
-width: 449px;
-height: 15px;
-font-family: 'Montserrat Alternates';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 15px;
+   margin-top: 20px;
+   padding-left: 20px;
+   padding-right: 20px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   font-family: var(--font-family);
+   font-size: 12px;
+box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.25);
+border-radius: 20px;
 
-text-align: center;
-color: #FFFFFF;
+}
 
+ .scientist-div-1,
+.scientist-div-2,
+.scientist-div-3,
+.scientist-div-4,
+.scientist-div-5,
+.scientist-div-6,
+.scientist-div-7,
+.scientist-div-8 {
+    background-color: #000;
+    width: 500px;
+    box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.25);
+border-radius: 20px;   
+  
+    width: fit-content;
+}
+
+ .scientist-div-p{
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    color: #fff;
+   font-weight: 400px;
+    font-size: 12px;
+    font-family: var(--font-family);
+ }
+ 
+.div-second-scientist > div:nth-child(odd) {
+    justify-self: end;
+}
+.div-second-scientist > div:nth-child(even) {
+    justify-self: start;
 }
