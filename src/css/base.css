@@ -1,0 +1,27 @@
+:root {
+    --font-family: "Montserrat Alternates", sans-serif;
+    --second-family: "Inter", sans-serif;
+    --third-family: "Sacramento", sans-serif;
+
+    --accent-color: #039900;
+    --main-color: #000000;
+    
+    --light-color: #ffffff;
+    --dark-color: #000000;
+
+    --hover-color: #F1F1F1;
+    --input-color: #D7D7D7;
+    --toggle-color: #7A7A7A;
+}
+
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--light-color);
+    color: var(--main-color);
+}
+
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+}
