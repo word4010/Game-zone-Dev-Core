@@ -1,3 +1,7 @@
+.section-block--leap-year {
+    padding: 20px 0;
+}
+
 .section-block__title {
     font-weight: 400;
     font-size: 16px;
@@ -22,7 +26,7 @@
     width: 100%;
     max-width: 300px;
     height: 50px;
-    box-shadow: 3px 3px 0px #B5B5B5;
+    box-shadow: 3px 3px 0px var(--shadow-color);
 }
 
 .input-group__field {
@@ -37,12 +41,12 @@
 }
 
 .input-group__field::placeholder {
-    color: #8E8E8E;
+    color: var(--placeholder-color);
 }
 
 .input-group__button {
     border: none;
-    background-color: var(--dark-color);
+    background-color: var(--button-color);
     width: 50px;
     height: 50px;
     border-radius: 0 50px 50px 0;
