@@ -21,6 +21,8 @@
     --shadow-color: #959595;
     --placeholder-color: #8E8E8E;
     --button-color: #000000;
+    --result-success-color: #039900;
+    --result-error-color: #990000;
 }
     
 /* Темна тема */
@@ -43,6 +45,8 @@
     --shadow-color: #000000;
     --placeholder-color: #8E8E8E;
     --button-color: #000000;
+    --result-success-color: #63ff79;
+    --result-error-color: #ff4d4d;
 }
 
 

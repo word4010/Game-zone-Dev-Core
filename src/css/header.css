@@ -16,6 +16,10 @@
     user-select: none;
 }
 
+[data-theme="dark"] .logo__icon {
+    filter: brightness(0) invert(1);
+}
+
 .logo__icon {
     width: 35px;
     height: auto;

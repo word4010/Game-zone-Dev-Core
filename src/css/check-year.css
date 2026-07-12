@@ -12,19 +12,20 @@
 
 .section-block__content {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center ;
     gap: 90px;
-    margin-bottom: 50px;
+    min-height: 50px;
 }
+
+/* ===== Поле вводу ===== */
 
 .input-group {
     display: flex;
     align-items: center;
     background-color: var(--input-color);
     border-radius: 50px;
-    width: 100%;
-    max-width: 300px;
+    width: 300px;
     height: 50px;
     box-shadow: 3px 3px 0px var(--shadow-color);
 }
@@ -34,10 +35,10 @@
     border: none;
     background: transparent;
     outline: none;
+    padding: 0 10px 0 15px;
     font-family: var(--font-family);
     font-size: 12px;
     color: var(--main-color);
-    padding: 0 10px 0 15px;
 }
 
 .input-group__field::placeholder {
@@ -45,45 +46,65 @@
 }
 
 .input-group__button {
-    border: none;
-    background-color: var(--button-color);
     width: 50px;
     height: 50px;
+    border: none;
     border-radius: 0 50px 50px 0;
+    background: var(--button-color);
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     cursor: pointer;
-    transition: transform 0.1s ease, opacity 0.2s ease;
+    transition: .2s;
 }
 
 .input-group__button:hover {
-    opacity: 0.5;
+    opacity: .7;
 }
 
 .input-group__button:active {
-    transform: scale(0.95);
+    transform: scale(.95);
 }
 
 .input-group__icon {
     width: 20px;
-    height: auto;
+}
+
+/* ===== Повідомлення ===== */
+
+.section-block__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    min-height: 50px;
 }
 
 .section-block__result {
-    font-family: var(--font-family);
-    font-size: 16px;
-    margin: 0;
+    display: none;
+    font-size: 12px;
+    font-weight: 400;
 }
 
-.section-block__result--success {
-    color: var(--accent-color);
+.section-block__result.show {
+    display: block;
 }
+
+.section-block__result.success {
+    font-size: 12px !important;
+    color: var(--result-success-color) !important;
+}
+
+.section-block__result.error {
+    font-size: 12px !important;
+    color: var(--result-error-color) !important;
+}
+/* ===== Лінії ===== */
 
 .section-block__line {
     border: none;
     height: 1px;
-    background-color: var(--dark-color);
+    background: var(--dark-color);
     width: 70%;
     margin: 60px auto;
 }
