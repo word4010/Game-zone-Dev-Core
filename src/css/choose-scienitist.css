@@ -27,8 +27,11 @@ border-radius: 20px;
     display: flex;
     justify-content: center;
 }
-.div-ul{
-    padding-right: 59px;
+.div-ul-scientist{
+    display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 36px 59px;
+  padding-bottom: 36px;
 }
 .div-ul-1{
     padding-right: 59px;
@@ -60,6 +63,7 @@ justify-content: center;
     text-align: right;
 }
 .divv-p{
+    cursor: pointer;
     font-weight: 400;
     color: #fff;
     background-color: black;
@@ -90,8 +94,14 @@ border-radius: 20px;
   
     width: fit-content;
 }
-
- .scientist-div-p{
+.scientist-div-p-1,
+.scientist-div-p-2,
+.scientist-div-p-3,
+.scientist-div-p-4,
+.scientist-div-p-5,
+.scientist-div-p-6,
+.scientist-div-p-7,
+ .scientist-div-p-8 {
     padding-bottom: 10px;
     padding-right: 20px;
     padding-left: 20px;
@@ -100,6 +110,7 @@ border-radius: 20px;
    font-weight: 400px;
     font-size: 12px;
     font-family: var(--font-family);
+    cursor: pointer;
  }
  
 .div-second-scientist > div:nth-child(odd) {
