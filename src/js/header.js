@@ -1,8 +1,8 @@
 const toggle = document.getElementById("themeToggle");
 const icon = document.querySelector(".theme-toggle__icon");
 
-const sunIcon = "./img/header/sun-switch.svg";
-const moonIcon = "./img/header/moon-switch.svg";
+const sunIcon = "../img/header/sun-switch.svg";
+const moonIcon = "../img/header/moon-switch.svg";
 
 const savedTheme = localStorage.getItem("theme") || "light";
 
