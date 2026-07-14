@@ -3,16 +3,15 @@
         <hr class="section-block__line">
         <h2 class="section-block__title">Перевір в який рік ти народився</h2>
         <div class="section-block__content">
-            <div class="section-block__input-wrapper input-group"> <input type="text"
-                    placeholder="Введіть рік народження" class="input-group__field">
-                <button class="input-group__button">
+            <div class="section-block__input-wrapper input-group">
+                <input id="birthYear" type="text" placeholder="Введіть рік народження" class="input-group__field">
+            
+                <button id="checkYearBtn" class="input-group__button">
                     <img src="./img/search.svg" alt="Search" class="input-group__icon">
                 </button>
             </div>
-
-            <p class="section-block__result section-block__result--success">
-                Ви народилися у високосний рік!
-            </p>
+            
+            <p id="result" class="section-block__result"></p>
 
         </div>
         <hr class="section-block__line">
