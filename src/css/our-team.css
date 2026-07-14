@@ -1,0 +1,80 @@
+.slider-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.slider-viewport {
+    width: 300px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.slider-track {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+}
+
+.slider-slide {
+    min-width: 300px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.avatar-placeholder {
+    width: 220px;
+    height: 220px;
+    border-radius: 15px;
+    margin: 0 auto 15px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.student-1 {
+    background-image: url('../img/kolya.png');
+}
+
+.student-2 {
+    background-image: url('../img/maxsh.png');
+}
+
+.slider-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333;
+    padding: 10px;
+}
+
+.slider-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.dot {
+    width: 24px;
+    height: 4px;
+    background-color: #e0e0e0;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dot.active {
+    background-color: #555;
+}
+
+
+.our-team-line {
+    margin-top: 37px;
+}
