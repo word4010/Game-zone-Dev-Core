@@ -26,8 +26,8 @@
     <!-- Main Stylesheet -->
     
 
-  <script type="module" crossorigin src="/Game-zone-Dev-Core/assets/index-85217a2d.js"></script>
-  <link rel="stylesheet" href="/Game-zone-Dev-Core/assets/index-e7d65a9a.css">
+  <script type="module" crossorigin src="/Game-zone-Dev-Core/assets/index-7f849d7e.js"></script>
+  <link rel="stylesheet" href="/Game-zone-Dev-Core/assets/index-8a92aee7.css">
 </head>
 
 <body>
@@ -55,9 +55,9 @@
         </nav>
 
         <div class="header__controls controls">
-            <div class="controls__theme-toggle theme-toggle">
-                <div class="theme-toggle__button">
-                    <img src="/Game-zone-Dev-Core/assets/sun-switch-c444cf4e.svg" alt="Light theme" class="theme-toggle__icon">
+            <div class="controls__theme-toggle theme-toggle" id="themeToggle">
+                <div class="theme-toggle__thumb">
+                    <img src="/Game-zone-Dev-Core/assets/sun-switch-c444cf4e.svg" alt="Theme" class="theme-toggle__icon">
                 </div>
             </div>
             <p class="controls__greeting user-greeting">
@@ -67,22 +67,21 @@
     </div>
 </header>   
   <main>
-    <h1 >Популярні інтерактивні ігри</h1>
+    <h1 class="main-title">Популярні інтерактивні ігри</h1>
     <div class="section-block section-block--leap-year">
     <div class="container section-block__container">
         <hr class="section-block__line">
         <h2 class="section-block__title">Перевір в який рік ти народився</h2>
         <div class="section-block__content">
-            <div class="section-block__input-wrapper input-group"> <input type="text"
-                    placeholder="Введіть рік народження" class="input-group__field">
-                <button class="input-group__button">
+            <div class="section-block__input-wrapper input-group">
+                <input id="birthYear" type="text" placeholder="Введіть рік народження" class="input-group__field">
+            
+                <button id="checkYearBtn" class="input-group__button">
                     <img src="/Game-zone-Dev-Core/assets/search-3f174def.svg" alt="Search" class="input-group__icon">
                 </button>
             </div>
-
-            <p class="section-block__result section-block__result--success">
-                Ви народилися у високосний рік!
-            </p>
+            
+            <p id="result" class="section-block__result"></p>
 
         </div>
         <hr class="section-block__line">
