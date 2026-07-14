@@ -105,7 +105,7 @@ function createLi(scientists) {
     life.style.fontFamily = "var(--font-family)"
     name.style.textAlign = "center"
     life.style.textAlign = "center"
-    name.style.paddingTop = "41px"
+    // name.style.paddingTop = "41px"
     cardItem.classList.add("card")
     cardItem.append(name, life)
     card.append(cardItem)
