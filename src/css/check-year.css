@@ -97,3 +97,14 @@
     font-size: 12px !important;
     color: var(--result-error-color) !important;
 }
+
+/* ===== Лінії ===== */
+
+.section-block__line {
+    border: none;
+    height: 1px;
+    background: var(--dark-color);
+    width: 70%;
+    margin: 60px auto;
+}
+
