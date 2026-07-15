@@ -95,7 +95,6 @@ function createLi(scientists) {
     life.textContent = `${scientist.born} - ${scientist.dead}`
     cardItem.style.width = "100px"
     cardItem.style.height = "100px"
-    cardItem.style.backgroundColor = "rgba(217, 217, 217, 1)"
     cardItem.style.borderRadius = "20px"
     name.style.fontSize = "8px"
     life.style.fontSize = "8px"
@@ -103,8 +102,17 @@ function createLi(scientists) {
     life.style.fontWeight = "400"
     name.style.fontFamily = "var(--font-family)"
     life.style.fontFamily = "var(--font-family)"
+    name.style.color = "black"
+    life.style.color = "black"
     name.style.textAlign = "center"
     life.style.textAlign = "center"
+    cardItem.style.display = "flex"
+    cardItem.style.flexDirection = "column"
+    cardItem.style.justifyContent = "center"
+    cardItem.style.alignItems = "center"
+    cardItem.style.gap = "4px"
+    cardItem.style.padding = "8px"
+    cardItem.style.boxSizing = "border-box"
     // name.style.paddingTop = "41px"
     cardItem.classList.add("card")
     cardItem.append(name, life)

@@ -1,48 +1,41 @@
-  <div class="container">
+<section class="rps-section" data-category="game">
+    <hr class="section-block__line rsc-block__line">
+    <div class="container">
+        <h2 class="section-block__title">Камінь - ножиці - папір</h2>
 
-    
-        <div class="game">
+        <div class="rps-game-area">
+            <div class="rps-choices">
+                <button class="rps-btn" data-choice="rock" aria-label="Камінь">
+                    <img src="./img/rock-scissors-paper/stone.svg" alt="Камінь" class="rps-icon-img" height="35"
+                        width="35">
+                </button>
 
-            <h2 class="section-block__title">Камінь - ножиці - папір</h2>
+                <button class="rps-btn" data-choice="scissors" aria-label="Ножиці">
+                    <img src="./img/rock-scissors-paper/scissors.svg" alt="Ножиці" class="rps-icon-img" height="35"
+                        width="35">
+                </button>
 
-            <div class="game-content">
-
-                <div class="buttons">
-
-                    <button class="choice-btn" id="rock">
-
-                        <img src="./images/rock.png" alt="Камінь">
-                    </button>
-
-                    <button class="choice-btn" id="scissors">
-                        <img src="./images/scissors.png" alt="Ножиці">
-                    </button>
-
-                    <button class="choice-btn" id="paper">
-                        <img src="./images/paper.png" alt="Папір">
-
-                    </button>
-
-                </div>
-
-                <div class="score">
-
-                    <h3>Рахунок:</h3>
-
-                    <p>Комп'ютер - <span id="computer-score">0</span></p>
-                    <p>Ви - <span id="player-score">0</span></p>
-
-                </div>
-
+                <button class="rps-btn" data-choice="paper" aria-label="Папір">
+                    <img src="./img/rock-scissors-paper/paper.svg" alt="Папір" class="rps-icon-img" height="35"
+                        width="35">
+                </button>
             </div>
 
-            <p id="result">Ви виграли раунд!</p>
-
-            <button id="computer-choice">
-                Варіант комп'ютера
-            </button>
-
+            <div class="rps-score-board">
+                <h3 class="score-title">Рахунок:</h3>
+                <p class="score-line">Комп’ютер - <span id="cpu-score">0</span></p>
+                <p class="score-line">Ви - <span id="player-score">0</span></p>
+            </div>
         </div>
 
-</div>
+        <div class="rps-result-container">
+            <div class="rps-result-text" id="rps-result-text">Зробіть свій хід!</div>
+        </div>
 
+        <div id="cpu-choice-container" class="rps-cpu-display-hidden">
+            <span class="cpu-prefix">Комп'ютер вибрав:</span>
+            <img id="cpu-choice-icon" src="" alt="Вибір комп'ютера" class="rps-icon-img rps-icon-img-cpu">
+            <span id="cpu-choice-text" class="cpu-choice-name"></span>
+        </div>
+    </div>
+</section>

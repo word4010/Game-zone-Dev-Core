@@ -1,4 +1,4 @@
-<div class="section-block section-block--time-calculator">
+<div class="section-block section-block--time-calculator" data-category="numeric">
     <div class="container section-block__container">
         <hr class="section-block__line">
         <h2 class="section-block__title">Калькулятор часу</h2>
@@ -6,7 +6,7 @@
         <div class="section-block__content time-calculator__content">
 
             <div class="section-block__input-wrapper input-group">
-                <input type="text" id="timeInput" placeholder="Введіть число" class="input-group__field" inputmode="numeric" pattern="\d*" oninput="this.value = this.value.replace(/\D/g, '')" required>
+                <input type="text" id="timeInput" placeholder="Введіть число" class="input-group__field time-input-field" inputmode="numeric" pattern="\d*" oninput="this.value = this.value.replace(/\D/g, '')" required>
                 <button id="calcButton" class="input-group__button">
                     <img src="./img/search.svg" alt="Search" class="input-group__icon">
                 </button>
@@ -16,6 +16,6 @@
 
             <p id="timeResult" class="section-block__result">0 дн. 00:00:00</p>
         </div>
-        <hr class="section-block__line">
     </div>
+    <hr class="section-block__line time-block__line">
 </div>
