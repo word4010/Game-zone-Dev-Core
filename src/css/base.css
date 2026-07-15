@@ -1,0 +1,72 @@
+:root {
+    --font-family: "Montserrat Alternates", sans-serif;
+    --second-family: "Inter", sans-serif;
+    --third-family: "Sacramento", sans-serif;
+
+    /* Кольори */
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --header-color: #ffffff;
+
+    --main-color: #000000;
+    --accent-color: #039900;
+    
+    --light-color: #ffffff;
+    --dark-color: #000000;
+    
+    --hover-color: #f3f3f3;
+
+    --toggle-bg: #7d7d7d;
+    --input-color: #D7D7D7;
+    --shadow-color: #959595;
+    --placeholder-color: #8E8E8E;
+    --button-color: #000000;
+    --result-success-color: #039900;
+    --result-error-color: #990000;
+}
+    
+/* Темна тема */
+    
+[data-theme="dark"] {
+    --bg-color: #1e1e1e;
+    --text-color: #ffffff;
+    --header-color: #2b2b2b;
+    
+    --main-color: #ffffff;
+    --accent-color: #63ff79;
+    
+    --light-color: #2b2b2b;
+    --dark-color: #ffffff;
+    
+    --hover-color: #3a3a3a;
+    
+    --toggle-bg: #3b3b3b;
+    --input-color: #3a3a3a;
+    --shadow-color: #000000;
+    --placeholder-color: #8E8E8E;
+    --button-color: #000000;
+    --result-success-color: #63ff79;
+    --result-error-color: #ff4d4d;
+}
+
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--light-color);
+    color: var(--main-color);
+
+    transition: .3s;
+}
+
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.main-title {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--main-color);
+    padding: 10px 0;
+}
