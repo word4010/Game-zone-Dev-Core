@@ -87,28 +87,26 @@
         <hr class="section-block__line">
     </div>
 </div>
-    <div class="guess-section">
-    <div class="container">
-
-        <h2 class="guess-title">
+    <div class="guess-section section-block--leap-year">
+    <div class="container section-block__container">
+        <h2 class="section-block__title guess-title">
             Вгадай число, яке загадав комп'ютер
         </h2>
 
-        <div class="guess-content">
-
-            <div class="guess-input">
-                <input type="number" id="guessNumber" placeholder="Введіть число">
-
-                <button id="guessBtn">
-                    <img src="./img/search.png" alt="Пошук">
-                </button>
-            </div>
-
-            <p class="guess-message">
-                Вітаю, ви вгадали число! (number)
-            </p>
-
-        </div>
+        <div class="section-block__content guess-content">
+                <div class="section-block__input-wrapper guess-input input-group">
+                    <input id="guessNumber" type="number" placeholder="Ввеіть число" class="input-group__field " >
+                
+                    <button id="guessBtn" class="input-group__button">
+                        <img src="/Game-zone-Dev-Core/assets/search-3f174def.svg" alt="Search" class="input-group__icon">
+                    </button>
+                </div>
+                <p class="guess-message section-block__result" id="resultat">
+                </p>
+                </div>
+            </div> 
+       
+        <hr class="section-block__line">
     </div>
 </div>
       <div class="container">
@@ -388,7 +386,7 @@
 <div class="backdrop is-hidden">
     <div class="modal">
         <button type="button" class="modal-close">
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAAAH9JREFUeAGdksENgCAMRRtdwBEcASdxFTdwJOfx5NWbjmBJagIB2n5IfiAk7wXajkR0cE7OTdjaOUs8BM4lOwJHZv4vEEkBI5Im7JGYsCZxwzUJDKeSx4IHRbByXjlPBK702fCc1P7slmgFMyWeajclSKsKSU+fM8lGHUMicPgAXa4oX/7gSKUAAAAASUVORK5CYII=" alt="Закрити">
+            <img src="./img/close.png" alt="Закрити">
         </button>
         <h2 class="modal-title">
             Дякую за підписку!
