@@ -4,7 +4,7 @@
     align-items: center;
 }
 
-.section-block--max-number .section-block__title {
+.section-block--max-number {
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 16px;
@@ -40,7 +40,7 @@
     outline: none;
     font-family: var(--font-family);
     font-size: 12px;
-    color: var(--main-color);
+    color: var(--light-color);
     text-align: center;
     box-shadow: 3px 3px 0px var(--shadow-color);
     transition: transform 0.1s ease, box-shadow 0.1s ease;

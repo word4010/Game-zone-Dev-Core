@@ -1,37 +1,22 @@
- <link rel="stylesheet" href="./css/calculator.css">
- <div class="calculator">
+<div class="calculator">
+    <div class="container calculator-container">
+        <hr class="section-block__line">
+        <h2 class="section-block__title">Калькулятор</h2>
+        <div class="calculator-content">
+            <input type="number" id="number1" class="calc-input" placeholder="Введіть число" inputmode="numeric" pattern="\d*" oninput="this.value = this.value.replace(/\D/g, '')" required>
 
-            <h2>Калькулятор</h2>
-
-            <div class="calculator-content">
-
-                <input
-                    type="number"
-                    id="number1"
-                    placeholder="Введіть число">
-
-                <div class="operations">
-
-                    <button class="operator">+</button>
-                    <button class="operator">*</button>
-                    <button class="operator">-</button>
-                    <button class="operator">/</button>
-
-                </div>
-
-                <input
-                    type="number"
-                    id="number2"
-                    placeholder="Введіть число">
-
-                <button id="equal">=</button>
-
-                <input
-                    type="text"
-                    id="result-input"
-                    placeholder="Результат"
-                    readonly>
-
+            <div class="operations-grid">
+                <button class="operator-btn" data-op="+">+</button>
+                <button class="operator-btn" data-op="*">*</button>
+                <button class="operator-btn" data-op="-">-</button>
+                <button class="operator-btn" data-op="/">/</button>
             </div>
 
+            <input type="number" id="number2" class="calc-input" placeholder="Введіть число" inputmode="numeric" pattern="\d*" oninput="this.value = this.value.replace(/\D/g, '')" required>
+
+            <button id="equal">=</button>
+
+            <input type="text" id="result-input" class="calc-input" placeholder="Результат" readonly>
         </div>
+    </div>
+</div>
