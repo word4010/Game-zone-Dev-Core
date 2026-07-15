@@ -1,0 +1,112 @@
+
+/* .section-block--leap-year {
+    padding: 20px 0;
+}
+
+.section-block__title {
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: var(--main-color);
+    margin-bottom: 50px;
+}
+
+.section-block__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    min-height: 50px;
+}
+
+
+
+.input-group {
+    display: flex;
+    align-items: center;
+    background-color: var(--input-color);
+    border-radius: 50px;
+    width: 300px;
+    height: 50px;
+    box-shadow: 3px 3px 0px var(--shadow-color);
+}
+
+.input-group__field {
+    flex: 1;
+    border: none;
+    background: transparent;
+    outline: none;
+    padding: 0 10px 0 15px;
+    font-family: var(--font-family);
+    font-size: 12px;
+    color: var(--main-color);
+}
+
+.input-group__field::placeholder {
+    color: var(--placeholder-color);
+}
+
+.input-group__button {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 0 50px 50px 0;
+    background: var(--button-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.input-group__button:hover {
+    opacity: .7;
+}
+
+.input-group__button:active {
+    transform: scale(.95);
+}
+
+.input-group__icon {
+    width: 20px;
+}
+
+
+
+.section-block__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    min-height: 50px;
+}
+
+.section-block__result {
+    display: none;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.section-block__result.show {
+    display: block;
+}
+
+.section-block__result.success {
+    font-size: 12px !important;
+    color: var(--result-success-color) !important;
+}
+
+.section-block__result.error {
+    font-size: 12px !important;
+    color: var(--result-error-color) !important;
+}
+
+
+
+.section-block__line {
+    border: none;
+    height: 1px;
+    background: var(--dark-color);
+    width: 70%;
+    margin: 60px auto;
+} */
