@@ -41,10 +41,10 @@
     --hover-color: #3a3a3a;
     
     --toggle-bg: #3b3b3b;
-    --input-color: #3a3a3a;
-    --shadow-color: #000000;
+    --input-color: #ffffff;
+    --shadow-color: #414141;
     --placeholder-color: #8E8E8E;
-    --button-color: #000000;
+    --button-color: #757575;
     --result-success-color: #63ff79;
     --result-error-color: #ff4d4d;
 }
@@ -69,4 +69,21 @@ body {
     text-align: center;
     color: var(--main-color);
     padding: 10px 0;
+}
+
+.section-block__line {
+    border: none;
+    height: 1px;
+    background: var(--dark-color);
+    width: 70%;
+    margin: 37px auto;
+}
+
+.section-block__title {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: var(--main-color);
+    margin-bottom: 36px;
 }
