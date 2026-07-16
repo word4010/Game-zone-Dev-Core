@@ -1,9 +1,9 @@
-<div class="calculator">
+<div class="calculator" data-category="numeric">
     <div class="container calculator-container">
         <hr class="section-block__line">
         <h2 class="section-block__title">Калькулятор</h2>
         <div class="calculator-content">
-            <input type="number" id="number1" class="calc-input" placeholder="Введіть число" inputmode="numeric" pattern="\d*" oninput="this.value = this.value.replace(/\D/g, '')" required>
+            <input type="text" id="number1" class="calc-input" placeholder="Введіть число" inputmode="numeric" pattern="\d*" oninput="this.value = this.value.replace(/\D/g, '')" required>
 
             <div class="operations-grid">
                 <button class="operator-btn" data-op="+">+</button>
@@ -12,7 +12,7 @@
                 <button class="operator-btn" data-op="/">/</button>
             </div>
 
-            <input type="number" id="number2" class="calc-input" placeholder="Введіть число" inputmode="numeric" pattern="\d*" oninput="this.value = this.value.replace(/\D/g, '')" required>
+            <input type="text" id="number2" class="calc-input" placeholder="Введіть число" inputmode="numeric" pattern="\d*" oninput="this.value = this.value.replace(/\D/g, '')" required>
 
             <button id="equal">=</button>
 

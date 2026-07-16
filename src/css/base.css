@@ -5,6 +5,7 @@
 
     /* Кольори */
     --bg-color: #ffffff;
+    --bg-img-color: #acacac;
     --text-color: #000000;
     --header-color: #ffffff;
 
@@ -13,22 +14,31 @@
     
     --light-color: #ffffff;
     --dark-color: #000000;
+    --main-color-text: #000000;
     
     --hover-color: #f3f3f3;
-
     --toggle-bg: #7d7d7d;
     --input-color: #D7D7D7;
     --shadow-color: #959595;
     --placeholder-color: #8E8E8E;
     --button-color: #000000;
+    --card-color: rgba(217, 217, 217, 1);
+    --dot-color: #e0e0e0;
+    --slider-color: #333;
+    --input-dark-color: black;
+
     --result-success-color: #039900;
     --result-error-color: #990000;
+
+    --dark-color-text: black;
+    --light-color-text: white;
 }
     
 /* Темна тема */
     
 [data-theme="dark"] {
     --bg-color: #1e1e1e;
+    --bg-img-color: #0f0f0f;
     --text-color: #ffffff;
     --header-color: #2b2b2b;
     
@@ -45,10 +55,43 @@
     --shadow-color: #414141;
     --placeholder-color: #8E8E8E;
     --button-color: #757575;
+    --card-color: rgb(245, 245, 245);
+    --dot-color: #ffffff;
+    --slider-color: #ffffff;
+
     --result-success-color: #63ff79;
     --result-error-color: #ff4d4d;
+
+    --dark-color-text: white;
+    --light-color-text: black;
 }
 
+main {
+    position: relative;
+    background-image: url('../img/bg-left-img.svg'), url('../img/bg-right-img.svg');
+    background-color: var(--bg-img-color);
+    background-position: left top, right top;
+    background-repeat: repeat-y, repeat-y;
+    background-size: 300px auto;
+}
+
+main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 1420px;
+    background-color: var(--light-color);
+    z-index: 1;
+}
+
+main>* {
+    position: relative;
+    z-index: 2;
+}
 
 body {
     font-family: var(--font-family);
@@ -61,6 +104,7 @@ body {
 .container {
     max-width: 1180px;
     margin: 0 auto;
+
 }
 
 .main-title {
@@ -68,7 +112,8 @@ body {
     font-weight: 400;
     text-align: center;
     color: var(--main-color);
-    padding: 10px 0;
+    padding: 40px 0 0 0;
+    
 }
 
 .section-block__line {
@@ -86,4 +131,18 @@ body {
     text-align: center;
     color: var(--main-color);
     margin-bottom: 36px;
+}
+
+
+.input-group__button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 0 50px 50px 0;
+    background: var(--button-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .2s;
 }

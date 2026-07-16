@@ -2,12 +2,13 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log("Скрипт успішно завантажено");
     
     const inputs = document.querySelectorAll('.max-number__input');
-    const resultText = document.querySelector('.section-block__result');
+    // Шукаємо саме span для виведення числа
+    const resultValue = document.querySelector('.max-number__val');
 
     console.log("Кількість знайдених інпутів:", inputs.length);
-    console.log("Чи знайдено блок результату:", !!resultText);
+    console.log("Чи знайдено блок результату:", !!resultValue);
 
-    if (inputs.length === 0 || !resultText) {
+    if (inputs.length === 0 || !resultValue) {
         console.error("Помилка: перевірте, чи класи в HTML збігаються з тими, що в JS!");
         return;
     }
@@ -20,9 +21,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (values.length === 3) {
             const max = Math.max(...values);
-            resultText.textContent = `РЕЗУЛЬТАТ: ${max}`;
+            resultValue.textContent = max; 
         } else {
-            resultText.textContent = 'РЕЗУЛЬТАТ';
+            resultValue.textContent = '—'; 
         }
     };
 
