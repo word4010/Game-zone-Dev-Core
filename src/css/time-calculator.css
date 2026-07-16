@@ -1,39 +1,76 @@
-/* Контейнер секції з вертикальним вирівнюванням */
-.section-block--time-calculator .section-block__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.section-block--time-calculator {
+    padding: 20px 0 10px 0;
 }
 
-.section-block--time-calculator .section-block__title {
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 16px;
-    text-align: center;
-    color: var(--main-color);
-    margin: 0 0 50px 0;
-}
-
-.time-calculator__content {
+.section-block__content {
     display: flex;
-    align-items: center;
     justify-content: center;
-    gap: 50px;
-    width: 100%;
-    max-width: 800px;
+    align-items: center;
+    gap: 40px;
+    min-height: 50px;
 }
+
+
+.input-group__time {
+    display: flex;
+    align-items: center;
+    background-color: var(--input-color);
+    border-radius: 50px;
+    width: 90px;
+    height: 50px;
+    box-shadow: 3px 3px 0px var(--shadow-color);
+}
+
+.input-group__field {
+    flex: 1;
+    border: none;
+    background: transparent;
+    outline: none;
+    padding: 0 10px 0 15px;
+    width: 90px;
+    font-family: var(--font-family);
+    font-size: 12px;
+    color: var(--light-color);
+}
+
+.input-group__field::placeholder {
+    color: var(--placeholder-color);
+}
+
+.input-group__button {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 0 60px 60px 0;
+    background: var(--button-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.input-group__button:hover {
+    opacity: .7;
+}
+
+.input-group__button:active {
+    transform: scale(.95);
+}
+
+.input-group__icon {
+    width: 20px;
+}
+
+.section-block__result {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--main-color);
+    display: block;
+}
+
 
 .section-block__divider-dots {
-    width: 140px;
-    border-bottom: 3px dotted var(--main-color);
-    align-self: center;
-    margin-top: 5px;
-}
-
-.section-block__result--time {
-    font-family: var(--font-family);
-    font-size: 16px;
-    color: var(--main-color);
-    margin: 0;
-    white-space: nowrap;
+    border-top: 1px dashed var(--main-color);
+    width: 100px;
 }

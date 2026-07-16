@@ -1,35 +1,46 @@
 <div class="footer">
-    <div class="container">
+    <div class="container footer__container">
 
-        <a href="./index.html" class="footer-logo">
-            <img src="./img/site-logo.png" alt="Coding Magic">
+        <a href="./index.html" class="logo">
+            <img src="./img/footer/logo-footer.svg" alt="Coding Magic" class="logo__icon">
+            <div class="logo__text">
+                <span class="logo__title">Coding</span>
+                <span class="logo__subtitle">Magic</span>
+            </div>
         </a>
 
         <ul class="footer-contacts">
-            <li><a href="tel:+380000000000">+38 (000) 000-00-00</a></li>
-            <li><a href="mailto:codingmagic@gmail.com">codingmagic@gmail.com</a></li>
-            <li>Україна, Київ</li>
+            <li>Тел: <a href="tel:+381234567890">+38 (123) 456 78 90</a></li>
+            <li>E-Mail: <a href="mailto:codingmagic@gmail.com">codingmagic@gmail.com</a></li>
+            <li>Facebook: <a href="https://facebook.com/CodingMagic" target="_blank"
+                    rel="noopener noreferrer">CodingMagic</a></li>
+            <li>Twitter: <a href="https://twitter.com/CodingMagic" target="_blank"
+                    rel="noopener noreferrer">CodingMagic</a></li>
+            <li>Instagram: <a href="https://instagram.com/CodingMagic" target="_blank"
+                    rel="noopener noreferrer">CodingMagic</a></li>
         </ul>
 
-        <form class="footer-form">
-            <input type="email" placeholder="Ваша ел. пошта..." class="footer-input">
+        <div class="footer-subscribe">
+            <form class="footer-form">
+                <input type="email" placeholder="Ваша ел. адреса..." class="footer-input" required>
+                <button type="submit" class="footer-btn">Підписатись</button>
+            </form>
+            <p class="footer-disclaimer">*Підписавшись, Ви зможете отримувати інформацію про новинки на сайті</p>
+        </div>
 
-            <button type="submit" class="footer-btn">
-                Підписатися
-            </button>
-        </form>
-        <p class="footer-disclamer">*Підписавшись, Ви зможете ортимувати інформаццію про новинки на сайті</p>
     </div>
 </div>
 
 <div class="backdrop is-hidden">
     <div class="modal">
         <button type="button" class="modal-close">
-            <img src="./img/close.png" alt="Закрити">
+            <img src="./img/close.svg" alt="Close">
         </button>
-        <h2 class="modal-title">
-            Дякую за підписку!
-        </h2>
-    </div>
+        <h2 class="modal-title">Дякую за підписку!</h2>
 
+        <img src="./img/footer/sword.svg" alt="" class="modal-decor-icon icon-sword">
+        <img src="./img/footer/game.svg" alt="" class="modal-decor-icon icon-game">
+        <img src="./img/footer/puzzle.svg" alt="" class="modal-decor-icon icon-puzzle">
+        <img src="./img/footer/tictactoe.svg" alt="" class="modal-decor-icon icon-tictactoe">
+    </div>
 </div>
