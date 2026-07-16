@@ -167,3 +167,7 @@
 .rsc-block__line {
     width: 49%;
 }
+
+[data-theme="dark"] .rps-icon-img {
+    filter: brightness(0.1);
+}

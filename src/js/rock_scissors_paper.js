@@ -1,3 +1,7 @@
+import rockIcon from '../img/rock-scissors-paper/stone.svg';
+import scissorsIcon from '../img/rock-scissors-paper/scissors.svg';
+import paperIcon from '../img/rock-scissors-paper/paper.svg';
+
 document.addEventListener('DOMContentLoaded', () => {
     const rpsButtons = document.querySelectorAll('.rps-btn');
     const cpuScoreEl = document.getElementById('cpu-score');
@@ -9,9 +13,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const cpuChoiceText = document.getElementById('cpu-choice-text');
 
     const imagePaths = {
-        rock: './img/rock-scissors-paper/stone.svg',
-        scissors: './img/rock-scissors-paper/scissors.svg',
-        paper: '../img/rock-scissors-paper/paper.svg'
+        rock: rockIcon,
+        scissors: scissorsIcon,
+        paper: paperIcon
     };
 
     const choiceNamesUa = {
@@ -34,6 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function playRound(playerChoice) {
         const cpuChoice = choices[Math.floor(Math.random() * choices.length)];
         cpuChoiceContainer.classList.remove('rps-cpu-display-hidden');
+        
         cpuChoiceIcon.src = imagePaths[cpuChoice];
         cpuChoiceIcon.alt = choiceNamesUa[cpuChoice];
         cpuChoiceText.textContent = choiceNamesUa[cpuChoice];
@@ -58,11 +63,9 @@ document.addEventListener('DOMContentLoaded', () => {
             cpuScore++;
         }
 
-        // Оновлюємо рахунок
         playerScoreEl.textContent = playerScore;
         cpuScoreEl.textContent = cpuScore;
 
-        // Виводимо вердикт
         resultTextEl.textContent = roundResult;
         resultTextEl.className = `rps-result-text ${resultClass}`;
     }
