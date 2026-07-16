@@ -1,82 +1,169 @@
-.game-content {
-     position: relative;
+.rps-section {
+    user-select: none;
+}
+
+.rps-game-area {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    width: 100%;
+    margin-bottom: 40px;
 }
 
-.buttons {
+.rps-choices {
     display: flex;
-    gap: 40px;
+    gap: 32px;
 }
 
-.choice-btn {
-    width: 90px;
-    height: 90px;
+.rps-btn {
+    width: 60px;
+    height: 60px;
+    background-color: var(--dark-color);
     border: none;
-    border-radius: 25px;
-    background: #000;
-    cursor: pointer;
-
+    border-radius: 20px;
     display: flex;
-    justify-content: center;
     align-items: center;
-
-    transition: 0.3s;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+        box-shadow 0.2s ease;
 }
 
-.choice-btn:hover {
-    transform: scale(1.05);
+.rps-btn:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
 }
 
-.choice-btn img {
-    width: 45px;
-    height: 45px;
+.rps-btn:active {
+    transform: translateY(0) scale(0.98);
 }
 
-.score {
+.rps-icon-img {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+    transition: filter 0.3s ease, transform 0.2s ease;
+}
+
+.rps-btn:hover .rps-icon-img {
+    transform: scale(1.1);
+}
+
+[data-theme="dark"] .rps-icon-img {
+    filter: brightness(0.1);
+}
+
+.rps-score-board {
     position: absolute;
-    right: 0;
+    right: 200px;
+    font-family: var(--font-family);
+    font-size: 12px;
+    line-height: 1.4;
     text-align: left;
 }
 
-.score h3 {
-    font-size: 30px;
-    font-weight: 500;
-    margin-bottom: 10px;
+.score-title {
+    font-family: var(--font-family);
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 8px;
 }
 
-.score p {
-    font-size: 24px;
+.score-line {
+    font-family: var(--font-family);
+    margin: 4px 0;
+    font-weight: 400;
+    font-size: 14px;
 }
 
-#result {
+.rps-result-container {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0 10px 0;
+    min-height: 36px;
+}
+
+.rps-result-text {
+    font-family: var(--second-family);
+    font-size: 12px;
+    font-weight: 400;
     text-align: center;
-    margin: 60px 0;
-    font-size: 30px;
-    color: var(--accent-color);
-    font-weight: 500;
+    transition: color 0.2s ease;
 }
 
-#computer-choice {
-    display: block;
+.rps-result-text.success {
+    color: var(--result-success-color);
+}
+
+.rps-result-text.error {
+    color: var(--result-error-color);
+}
+
+.rps-result-text.draw {
+    color: var(--text-color);
+}
+
+#cpu-choice-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background-color: var(--dark-color);
+    color: var(--light-color-text);
+    padding: 14px 24px;
+    border-radius: 100px;
+    width: fit-content;
     margin: 0 auto;
-
-    width: 340px;
-    height: 70px;
-
-    border: none;
-    border-radius: 35px;
-
-    background: #000;
-    color: #fff;
-
-    font-size: 26px;
-    cursor: pointer;
-
-    transition: 0.3s;
+    font-family: var(--font-family);
+    box-sizing: border-box;
+    box-shadow: 3px 3px 0px var(--shadow-color);
+    transition: background-color 0.2s ease, color 0.2s ease, width 0.2s ease;
 }
 
-#computer-choice:hover {
-    background: #222;
+.rps-cpu-display-hidden .cpu-prefix,
+.rps-cpu-display-hidden #cpu-choice-icon,
+.rps-cpu-display-hidden #cpu-choice-text {
+    display: none !important;
+}
+
+.rps-cpu-display-hidden::before {
+    content: "Варіант комп’ютера";
+}
+
+.rps-icon-img-cpu {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+#cpu-choice-container.rps-cpu-display-hidden::before {
+    font-family: var(--font-family);
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    color: var(--light-color-text);
+}
+
+#cpu-choice-container {
+    font-family: var(--font-family);
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--light-color-text);
+}
+
+.cpu-prefix {
+    font-family: var(--font-family);
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.cpu-choice-name {
+    font-family: var(--font-family);
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.rsc-block__line {
+    width: 49%;
 }

@@ -24,7 +24,7 @@
     border-radius: 30px;
     font-size: 12px;
     width: 200px;
-    color: var(--light-color);
+    color: var(--main-color-text);
     box-shadow: 3px 3px 0px var(--shadow-color);
 }
 
@@ -45,7 +45,7 @@
     border: none;
     background-color: var(--dark-color);
     box-shadow: 3px 3px 0px var(--shadow-color);
-    color: var(--bg-color);
+    color: var(--light-color-text);
     cursor: pointer;
     font-weight: bold;
     font-size: 18px;
@@ -62,7 +62,7 @@
     border-radius: 50%;
     border: none;
     background-color: var(--dark-color);
-    color: var(--bg-color);
+    color: var(--light-color-text);
     font-size: 24px;
     cursor: pointer;
     box-shadow: 3px 3px 0px var(--shadow-color);

@@ -1,6 +1,6 @@
 <header class="header">
     <div class="container header__container">
-        <div class="header__logo logo">
+        <div class="header__logo logo" data-filter="all" style="cursor: pointer;">
             <img src="./img/header/logo-header.svg" alt="Coding Magic Logo" class="logo__icon">
             <div class="logo__text">
                 <span class="logo__title">Coding</span> <span class="logo__subtitle">Magic</span>
@@ -11,12 +11,15 @@
             <div class="nav__item nav__item--dropdown" tabindex="0">
                 Інтерактив <span class="nav__arrow"></span>
                 <ul class="nav__dropdown">
-                    <li class="nav__dropdown-item"><a href="" class="nav__dropdown-link">Числовий</a></li>
-                    <li class="nav__dropdown-item"><a href="" class="nav__dropdown-link">Ігровий</a></li>
-                    <li class="nav__dropdown-item"><a href="" class="nav__dropdown-link">Ознайомчий</a></li>
+                    <li class="nav__dropdown-item"><a href="#" data-filter="numeric"
+                            class="nav__dropdown-link">Числовий</a></li>
+                    <li class="nav__dropdown-item"><a href="#" data-filter="game" class="nav__dropdown-link">Ігровий</a>
+                    </li>
+                    <li class="nav__dropdown-item"><a href="#" data-filter="info"
+                            class="nav__dropdown-link">Ознайомчий</a></li>
                 </ul>
             </div>
-            <a href="#" class="nav__link">Наша команда</a>
+            <a href="#" data-filter="team" class="nav__link">Наша команда</a>
             <a href="#" class="nav__link">Контакти</a>
         </nav>
 
@@ -32,3 +35,37 @@
         </div>
     </div>
 </header>
+
+<div class="welcome-modal" id="welcomeModal">
+    <div class="welcome-modal__backdrop"></div>
+    <div class="welcome-modal__content">
+        <button class="welcome-modal__close" id="closeModal" aria-label="Закрити"></button>
+
+        <h3 class="welcome-modal__title">Привіт!</h3>
+        <p class="welcome-modal__desc">
+            Ви потрапили на сайт інтерактивних ігор та завдань.<br>
+            Надіємось, що вам сподобається і ви отримаєте позитивні емоції!<br>
+            Бажаємо Вам гарно провести час!
+        </p>
+
+        <div class="welcome-modal__decor welcome-modal__decor--sword">
+            <img src="./img/footer/sword.svg" alt="Декор меч" class="welcome-modal__icon">
+        </div>
+        <div class="welcome-modal__decor welcome-modal__decor--gamepad">
+            <img src="./img/footer/game.svg" alt="Декор геймпад" class="welcome-modal__icon">
+        </div>
+        <div class="welcome-modal__decor welcome-modal__decor--puzzle">
+            <img src="./img/footer/puzzle.svg" alt="Декор пазл" class="welcome-modal__icon">
+        </div>
+        <div class="welcome-modal__decor welcome-modal__decor--tictactoe">
+            <img src="./img/footer/tictactoe.svg" alt="Декор хрестики-нулики" class="welcome-modal__icon">
+        </div>
+
+        <div class="welcome-modal__form">
+            <label for="userNameInput" class="welcome-modal__label">Введіть своє ім'я:</label>
+            <input type="text" id="userNameInput" class="welcome-modal__input" placeholder="Ваше ім'я..."
+                autocomplete="off">
+            <button type="button" class="welcome-modal__btn" id="saveNameBtn">Зберегти</button>
+        </div>
+    </div>
+</div>
